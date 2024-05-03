@@ -1,10 +1,14 @@
 <script setup>
 import NavbarContent from "@/public/navbar/navbar-content.component.vue";
+import RegisterComponent from "@/components/register-component.vue";
+import RegisterCleanerComponent from "@/components/register-cleaner-component.vue";
+import LoginComponent from "@/components/login-component.vue";
+
 </script>
 
 <template>
   <header>
-    <navbar-content></navbar-content>
+    <login-component></login-component>
   </header>
 
 </template>
