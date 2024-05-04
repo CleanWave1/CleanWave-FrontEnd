@@ -5,11 +5,7 @@ import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional
 </script>
 
 <template>
-  <Sidebar></Sidebar>
 
-  <div class="app">
-    <router-view />
-  </div>
 </template>
 
 <style lang="scss">
@@ -25,21 +21,12 @@ import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Fira sans', sans-serif;
 }
 
 body {
   background: whitesmoke;
-}
-
-button {
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
 }
 
 .app {

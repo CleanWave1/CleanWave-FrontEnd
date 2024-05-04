@@ -30,6 +30,7 @@ export default {
 .flex{
   display:flex;
   padding: 20px;
+  color: black;
 }
 
 .back-icon {
