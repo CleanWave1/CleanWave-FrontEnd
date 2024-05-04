@@ -1,4 +1,9 @@
 <script setup>
+
+import Sidebar from '@/public/navbar-profesional/navbar-content.component.vue';
+import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional.component.vue";
+import loginComponent from "@/components/login-component.vue";
+
 </script>
 
 <template>
