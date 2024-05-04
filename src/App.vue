@@ -1,18 +1,20 @@
 <script setup>
 import NavbarContent from "@/public/navbar/navbar-content.component.vue";
+import HomeContentClient from "@/components/home-content-client.component.vue";
 </script>
 
 <template>
   <header>
-    <navbar-content></navbar-content>
+    <!--<navbar-content></navbar-content>-->
   </header>
-
+  <home-content-client></home-content-client>
 </template>
 
 <style scoped>
+
+
 header {
   line-height: 1.5;
-
 }
 
 .logo {
