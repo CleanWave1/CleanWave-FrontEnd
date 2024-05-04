@@ -1,8 +1,4 @@
 <script setup>
-import Sidebar from '@/public/navbar-profesional/navbar-content.component.vue';
-import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional.component.vue";
-import Login from '@/components/login-component.vue'
-import PayService from "@/components/payService.vue";
 </script>
 
 <template>
@@ -24,21 +20,12 @@ import PayService from "@/components/payService.vue";
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Fira sans', sans-serif;
 }
 
 body {
   background: whitesmoke;
-}
-
-button {
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
 }
 
 .app {
