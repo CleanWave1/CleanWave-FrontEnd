@@ -5,8 +5,10 @@ import { createApp } from 'vue'
 import PrimeVue from "primevue/config";
 //PrimeVue Material Design Theme
 import 'primevue/resources/themes/md-light-indigo/theme.css'
+import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
+import 'primevue/resources/primevue.css';
 //Import router
 import router from "@/router/index.js";
 //Import Components
@@ -24,8 +26,10 @@ import InputIcon from "primevue/inputicon";
 import FloatLabel from "primevue/floatlabel";
 import InputSwitch from "primevue/inputswitch";
 import Card from "primevue/card";
+import Textarea from "primevue/textarea";
 
 createApp(App)
+    /*.use(router)*/
     .use(PrimeVue, { ripple: true })
     .use(router)
     .component('pv-toast', Toast)
@@ -42,4 +46,5 @@ createApp(App)
     .component('pv-avatar', Avatar)
     .component('pv-dropdown', Dropdown)
     .component('pv-icon-field', IconField)
+    .component('pv-text-area',Textarea)
     .mount('#app')
