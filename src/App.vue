@@ -1,4 +1,5 @@
 <script setup>
+
 import Sidebar from '@/public/navbar-profesional/navbar-content.component.vue';
 import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional.component.vue";
 import loginComponent from "@/components/login-component.vue";
@@ -45,11 +46,11 @@ body {
   background-color: var(--primary);
   color: white;
   padding: 1rem;
-  z-index: 1000; /* To make sure it's above other content */
+  z-index: 1000;
 }
 
 .main-content {
-  margin-top: 4rem; /* Adjust this according to your ToolbarProfesional height */
+  margin-top: 4rem;
 }
 
 </style>

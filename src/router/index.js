@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from "vue-router";
 import solicitudesServicio from "@/components/solicitudes-Servicio.vue";
 import settings from "@/components/settings.vue"
+import payService from "@/components/payService.vue";
 import homeContentClientComponent from "@/components/home-content-client.component.vue";
 import servicesComponent from "@/components/services-component.vue";
 import loginComponent from "@/components/login-component.vue";
@@ -15,6 +16,7 @@ const router  = createRouter({
         {path: '/iniciar-sesion', component: loginComponent, meta: {title: 'Login'}},
         {path: '/home', component: solicitudesServicio, meta: {title: 'Home'}},
         {path: '/settings', component: settings, meta: {title: 'Config'}},
+        {path: '/payService', component: payService, meta: {title: 'Config'}},
         {path: '/registrarse', component: registerComponent, meta: {title: 'Sign Up'}},
         {path: '/forgot-password', component: passwordRecoveryComponent, meta: {title: 'Recovery'}},
         {path: '/recovery-email', component: passwordRecoveryEmailComponent, meta: {title: 'Servicios'}},
