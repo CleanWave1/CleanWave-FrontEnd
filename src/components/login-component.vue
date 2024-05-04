@@ -22,9 +22,13 @@ export default {
 <template>
   <div class="card flex justify-content-center">
     <div class="button-containers">
-      <pv-button label="Iniciar sesión" link class="bigger-button"/>
+      <router-link to="/iniciar-sesion">
+        <pv-button label="Iniciar sesión" link class="bigger-button"/>
+      </router-link>
       <span class="separator">|</span>
-      <pv-button label="Registrarse" link class="bigger-button"/>
+      <router-link to="/registrarse">
+        <pv-button label="Registrarse" link class="bigger-button"/>
+      </router-link>
     </div>
     <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
 
@@ -43,10 +47,14 @@ export default {
     <pv-checkbox v-model="checkedtyo" :binary="true" style="display: flex; margin-right: 15px;"/>
     <label for="checkboxlabel" style="color: black; margin-left: 10px;">Recuerdame</label>
   </div>
-  <div class="button-container">
-    <pv-button label="Iniciar Sesion"/>
-  </div>
-  <p class="redirect-text"><a href="/forgot-password">¿Olvidaste tu contraseña?</a></p>
+    <div class="button-container">
+      <router-link to="/inicio">
+        <pv-button label="Iniciar Sesion"/>
+      </router-link>
+    </div>
+    <p class="redirect-text">
+      <router-link to="/forgot-password">¿Olvidaste tu contraseña?</router-link>
+    </p>
   </div>
 </template>
 

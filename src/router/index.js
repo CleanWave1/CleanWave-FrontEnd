@@ -1,13 +1,27 @@
 import {createRouter, createWebHistory} from "vue-router";
 import solicitudesServicio from "@/components/solicitudes-Servicio.vue";
 import settings from "@/components/settings.vue"
+import homeContentClientComponent from "@/components/home-content-client.component.vue";
+import servicesComponent from "@/components/services-component.vue";
+import loginComponent from "@/components/login-component.vue";
+import registerComponent from "@/components/register-component.vue";
+import passwordRecoveryComponent from "@/components/password-recovery-component.vue";
+import registerCleanerComponent from "@/components/register-cleaner-component.vue";
+import passwordRecoveryEmailComponent from "@/components/password-recovery-email-component.vue";
 
 const router  = createRouter({
     history: createWebHistory(),
     routes : [
+        {path: '/iniciar-sesion', component: loginComponent, meta: {title: 'Login'}},
         {path: '/home', component: solicitudesServicio, meta: {title: 'Home'}},
         {path: '/settings', component: settings, meta: {title: 'Config'}},
-        {path: '/', redirect: '/home'},
+        {path: '/registrarse', component: registerComponent, meta: {title: 'Sign Up'}},
+        {path: '/forgot-password', component: passwordRecoveryComponent, meta: {title: 'Recovery'}},
+        {path: '/recovery-email', component: passwordRecoveryEmailComponent, meta: {title: 'Servicios'}},
+        {path: '/registrarse-personal-limpieza', component: registerCleanerComponent, meta: {title: 'Sign Up'}},
+        {path: '/inicio', component: homeContentClientComponent, meta: {title: 'Inicio'}},
+        {path: '/servicios', component: servicesComponent, meta: {title: 'Servicios'}},
+        {path: '/', redirect: '/iniciar-sesion'},
     ],
 });
 

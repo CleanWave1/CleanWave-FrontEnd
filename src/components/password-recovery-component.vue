@@ -9,9 +9,9 @@ export default {
 <template>
   <div>
     <div class="back-icon">
-      <a href="/login">
-        <span class="pi pi-arrow-left"></span> <!-- PrimeIcons back icon -->
-      </a>
+      <router-link to="/login">
+        <span class="pi pi-arrow-left"></span>
+      </router-link>
     </div>
     <div class="card flex justify-content-center">
       <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
@@ -27,8 +27,11 @@ export default {
         </div>
       </div>
       <div class="button-container">
-        <pv-button label="Siguiente"/>
+        <router-link to="/recovery-email">
+          <pv-button label="Siguiente"/>
+        </router-link>
       </div>
+
     </div>
   </div>
 </template>

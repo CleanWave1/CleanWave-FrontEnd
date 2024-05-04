@@ -21,7 +21,7 @@ export default {
 
     <pv-icon-field iconPosition="left">
       <pv-input-icon class="pi pi-search" style="line-height:0"> </pv-input-icon>
-      <pv-inputtext v-model="searchText" placeholder="Buscar..." style="width: 68rem"/>
+      <pv-input-text v-model="searchText" placeholder="Buscar..." style="width: 68rem"/>
     </pv-icon-field>
     <pv-button  label="Buscar" severity="contrast" size="small"  outlined style="color:white;
                 /*border: 1px solid black;*/ border-radius:0; padding:0 30px"/>
