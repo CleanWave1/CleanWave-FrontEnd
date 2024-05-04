@@ -7,10 +7,9 @@ export default {
 <template>
   <div>
     <div class="back-icon">
-      <a href="/login">
+      <router-link to="/login">
         <span class="pi pi-arrow-left"></span>
-      </a>
-    </div>
+      </router-link>
     <div class="card flex justify-content-center">
       <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
       <h2>¡Revisa tu Correo Electrónico!</h2>
@@ -19,10 +18,14 @@ export default {
       </div>
 
       <div class="button-container">
-        <pv-button label="Listo"/>
+        <router-link to="/iniciar-sesion">
+          <pv-button label="Listo"/>
+        </router-link>
       </div>
     </div>
   </div>
+  </div>
+
 </template>
 
 <style scoped>
@@ -57,14 +60,6 @@ export default {
   width: 150px;
   height: auto;
   margin: 100px 250px 0;
-}
-
-.checkbox-label {
-  font-size: 18px;
-}
-
-.checkbox-item {
-  margin-bottom: 30px;
 }
 
 .recovery-options input[type="checkbox"] {

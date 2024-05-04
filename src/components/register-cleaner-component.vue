@@ -22,9 +22,13 @@ export default {
 <template>
   <div class="card flex justify-content-center">
     <div class="button-containers">
-      <pv-button label="Iniciar sesión" link class="bigger-button"/>
+      <router-link to="/iniciar-sesion">
+        <pv-button label="Iniciar sesión" link class="bigger-button"/>
+      </router-link>
       <span class="separator">|</span>
-      <pv-button label="Registrarse" link class="bigger-button"/>
+      <router-link to="/registrarse">
+        <pv-button label="Registrarse" link class="bigger-button"/>
+      </router-link>
     </div>
     <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
     <div class="flex align-items-center">
@@ -64,11 +68,16 @@ export default {
     <pv-checkbox v-model="checkedtyo" :binary="true" style="display: flex; margin-right: 15px;"/>
     <label for="checkboxlabel" style="color: black; margin-left: 10px;">Acepto los términos y condiciones</label>
   </div>
-  <div class="button-container">
-    <pv-button label="Crear Cuenta"/>
+    <div class="button-container">
+      <router-link to="/home">
+        <pv-button label="Crear Cuenta"/>
+      </router-link>
+    </div>
+    <p class="redirect-text">
+      <router-link to="/registrarse">¿Buscas personal de limpieza? Regístrate aquí</router-link>
+    </p>
   </div>
-  <p class="redirect-text"><a href="/register">¿Buscas personal de limpieza? Regístrate aquí</a></p>
-  </div>
+
 </template>
 
 <style scoped>
