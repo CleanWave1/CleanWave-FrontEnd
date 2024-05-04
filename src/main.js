@@ -29,6 +29,9 @@ import Card from "primevue/card";
 import Textarea from "primevue/textarea";
 import Password from "primevue/password";
 import Checkbox from "primevue/checkbox";
+import Accordion from "primevue/accordion";
+import AccordionTab from "primevue/accordiontab";
+import Image from "primevue/image";
 
 createApp(App)
     /*.use(router)*/
@@ -51,4 +54,7 @@ createApp(App)
     .component('pv-text-area',Textarea)
     .component('pv-password',Password)
     .component('pv-checkbox',Checkbox)
+    .component('pv-accordion',Accordion)
+    .component('pv-accordionTab', AccordionTab)
+    .component('pv-image', Image)
     .mount('#app')

@@ -9,6 +9,8 @@ import registerComponent from "@/components/register-component.vue";
 import passwordRecoveryComponent from "@/components/password-recovery-component.vue";
 import registerCleanerComponent from "@/components/register-cleaner-component.vue";
 import passwordRecoveryEmailComponent from "@/components/password-recovery-email-component.vue";
+import FormsComponent from "@/components/forms-component.vue";
+import CleaningprofessionalSoprComponent from "@/components/cleaningprofessionalSopr-component.vue";
 
 const router  = createRouter({
     history: createWebHistory(),
@@ -23,6 +25,8 @@ const router  = createRouter({
         {path: '/registrarse-personal-limpieza', component: registerCleanerComponent, meta: {title: 'Sign Up'}},
         {path: '/inicio', component: homeContentClientComponent, meta: {title: 'Inicio'}},
         {path: '/servicios', component: servicesComponent, meta: {title: 'Servicios'}},
+        {path: '/programar-limpieza', component: FormsComponent, meta: {title: 'Programar Limpieza'}},
+        {path: '/ayuda', component: CleaningprofessionalSoprComponent, meta: {title: 'Soporte'}},
         {path: '/', redirect: '/iniciar-sesion'},
     ],
 });
