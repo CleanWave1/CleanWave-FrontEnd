@@ -27,6 +27,8 @@ import FloatLabel from "primevue/floatlabel";
 import InputSwitch from "primevue/inputswitch";
 import Card from "primevue/card";
 import Textarea from "primevue/textarea";
+import Password from "primevue/password";
+import Checkbox from "primevue/checkbox";
 
 createApp(App)
     /*.use(router)*/
@@ -47,4 +49,6 @@ createApp(App)
     .component('pv-dropdown', Dropdown)
     .component('pv-icon-field', IconField)
     .component('pv-text-area',Textarea)
+    .component('pv-password',Password)
+    .component('pv-checkbox',Checkbox)
     .mount('#app')

@@ -29,45 +29,46 @@ export default {
     <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
     <div class="flex align-items-center">
       <pv-checkbox v-model="checkedsolo" :binary="true" style="display: flex; margin-right: 15px;"/>
-      <label for="checkboxlabel">Persona</label>
+      <label for="checkboxlabel" style="color: black; margin-left: 10px;">Persona</label>
       <pv-checkbox v-model="checkedgroup" :binary="true" style="display: flex; margin-left: 500px;"/>
-      <label for="checkboxlabel">Grupo</label>
+      <label for="checkboxlabel" style="color: black; margin-left: 10px;">Grupo</label>
     </div>
-    <pv-floatlabel class="wide-floatlabel">
-      <pv-inputext id="names" v-model="name" style="width: 700px"/>
+    <pv-float-label class="wide-floatlabel">
+      <pv-input-text id="names" v-model="name" style="width: 700px"/>
       <label for="names" style="background-color: transparent;">Nombre / Nombre del Grupo</label>
-    </pv-floatlabel>
+    </pv-float-label>
 
-    <pv-floatlabel class="wide-floatlabel">
-      <pv-inputext id="email" v-model="email" style="width: 700px"/>
+    <pv-float-label class="wide-floatlabel">
+      <pv-input-text id="email" v-model="email" style="width: 700px"/>
       <label for="email" style="background-color: transparent;">Correo Electronico</label>
-    </pv-floatlabel>
+    </pv-float-label>
 
     <div class="password-containers"> <!-- Container for alignment -->
-      <pv-floatlabel class="wide-floatlabel">
+      <pv-float-label class="wide-floatlabel">
         <pv-password v-model="password" :feedback="false" inputId="password" toggle-mask showPassword="showPassword"/>
         <label for="password" style="background-color: transparent;">Contraseña</label>
-      </pv-floatlabel>
+      </pv-float-label>
 
-      <pv-floatlabel class="wide-floatlabel">
+      <pv-float-label class="wide-floatlabel">
         <pv-password v-model="confirmPassword" :feedback="false" inputId="confirmPassword" toggle-mask showPassword="showConfirmPassword"/>
         <label for="confirmPassword" style="background-color: transparent;">Confirmar Contraseña</label>
-      </pv-floatlabel>
+      </pv-float-label>
     </div>
 
-    <pv-floatlabel class="wide-floatlabel">
-      <pv-inputext id="phonenumber" v-model="phonenumber" style="width: 700px"/>
+    <pv-float-label class="wide-floatlabel">
+      <pv-input-text id="phonenumber" v-model="phonenumber" style="width: 700px"/>
       <label for="phonenumber" style="background-color: transparent;">Celular</label>
-    </pv-floatlabel>
-  </div>
+    </pv-float-label>
+
   <div class="flex align-items-center">
     <pv-checkbox v-model="checkedtyo" :binary="true" style="display: flex; margin-right: 15px;"/>
-    <label for="checkboxlabel">Acepto los términos y condiciones</label>
+    <label for="checkboxlabel" style="color: black; margin-left: 10px;">Acepto los términos y condiciones</label>
   </div>
   <div class="button-container">
     <pv-button label="Crear Cuenta"/>
   </div>
   <p class="redirect-text"><a href="/register">¿Buscas personal de limpieza? Regístrate aquí</a></p>
+  </div>
 </template>
 
 <style scoped>
@@ -79,7 +80,7 @@ export default {
 
 .password-containers {
   display: flex;
-  gap: 205px; /* Adjust the gap between the password and confirm password fields */
+  gap: 198px;
 }
 
 

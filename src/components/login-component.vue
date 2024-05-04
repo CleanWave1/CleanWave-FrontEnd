@@ -28,26 +28,26 @@ export default {
     </div>
     <img src="@/assets/cleanwave-logo.png" alt="logo-cleanwave" class="separator-image" />
 
-    <pv-floatlabel class="wide-floatlabel">
-      <pv-inputext id="email" v-model="email" style="width: 700px"/>
+    <pv-float-label class="wide-floatlabel">
+      <pv-input-text id="email" v-model="email" style="width: 700px"/>
       <label for="email" style="background-color: transparent;">Correo Electronico</label>
-    </pv-floatlabel>
+    </pv-float-label>
 
     <div class="password-containers"> <!-- Container for alignment -->
-      <pv-floatlabel class="wide-floatlabel">
+      <pv-float-label class="wide-floatlabel">
         <pv-password v-model="password" :feedback="false" inputId="password" toggle-mask showPassword="showPassword"/>
         <label for="password" style="background-color: transparent;">Contraseña</label>
-      </pv-floatlabel>
+      </pv-float-label>
     </div>
-  </div>
   <div class="flex align-items-center">
     <pv-checkbox v-model="checkedtyo" :binary="true" style="display: flex; margin-right: 15px;"/>
-    <label for="checkboxlabel">Recuerdame</label>
+    <label for="checkboxlabel" style="color: black; margin-left: 10px;">Recuerdame</label>
   </div>
   <div class="button-container">
     <pv-button label="Iniciar Sesion"/>
   </div>
   <p class="redirect-text"><a href="/forgot-password">¿Olvidaste tu contraseña?</a></p>
+  </div>
 </template>
 
 <style scoped>

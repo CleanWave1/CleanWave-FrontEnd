@@ -23,7 +23,7 @@ export default {
         </div>
         <div class="checkbox-item">
           <input type="checkbox" id="phoneCheckbox" name="recoveryOption" value="phone">
-          <label for="phoneCheckbox" class="checkbox-label">Número de Teléfono</label>
+          <label for="phoneCheckbox" class="checkbox-label" >Número de Teléfono</label>
         </div>
       </div>
       <div class="button-container">
@@ -38,6 +38,7 @@ export default {
 .flex{
   display:flex;
   padding: 20px;
+  color: black;
 }
 
 .back-icon {
@@ -68,6 +69,8 @@ export default {
 
 .checkbox-label {
   font-size: 18px;
+  color: black;
+  margin-left: 10px;
 }
 
 .checkbox-item {
