@@ -1,44 +1,65 @@
 <script setup>
-import NavbarContent from "@/public/navbar/navbar-content.component.vue";
-import HomeContentClient from "@/components/home-content-client.component.vue";
+import Sidebar from '@/public/navbar-profesional/navbar-content.component.vue';
+import ToolbarProfesional from "@/public/toolbar-profesional/toolbar-profesional.component.vue";
+
 </script>
 
 <template>
-  <header>
-    <!--<navbar-content></navbar-content>-->
-  </header>
-  <home-content-client></home-content-client>
+  <Sidebar></Sidebar>
+
+  <div class="app">
+    <router-view />
+  </div>
 </template>
 
-<style scoped>
-
-
-header {
-  line-height: 1.5;
+<style lang="scss">
+:root {
+  --primary: #21272A;
+  --primary-alt: #9FFFB0;
+  --grey: #64748b;
+  --dark: #DCFFE2;
+  --dark-alt: #9FFFB0;
+  --light: #21272A;
+  --sidebar-width: 300px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-/*
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira sans', sans-serif;
 }
 
- */
+body {
+  background: whitesmoke;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.ToolbarProfesional {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  z-index: 1000; /* To make sure it's above other content */
+}
+
+.main-content {
+  margin-top: 4rem; /* Adjust this according to your ToolbarProfesional height */
+}
+
 </style>
